@@ -5,10 +5,8 @@ function loadEntries() {
     entries.forEach((entry) => {
         const theEntryElement = document.createElement('li');
         theEntryElement.className = 'entry';
-        theEntryElement.innerHTML = '';
-        // theEntryElement.appendChild(createListElement('Post date: ' + entry.timestamp));
-        theEntryElement.appendChild(createListElement(entry.message));
-        entriesListElement.appendChild(theEntryElement); //appendChild i
+        theEntryElement.innerHTML = entry.message;
+        entriesListElement.appendChild(theEntryElement);
     });
   });
 }
