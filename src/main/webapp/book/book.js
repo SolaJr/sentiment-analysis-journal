@@ -1,12 +1,14 @@
 
 function loadEntries() {
   fetch('/journal').then(response => response.json()).then((entries) => { // Fetch = RPC request to server and waits then gets response
-    const entriesListElement = document.getElementById('entry-container');
+    const entriesListElement = document.getElementById('entry-container'); //entry-container is a 'div'
     entries.forEach((entry) => {
-        const theEntryElement = document.createElement('li');
-        theEntryElement.className = 'entry';
-        theEntryElement.innerHTML = entry.message;
-        entriesListElement.appendChild(theEntryElement);
+        const paragraph = document.createElement('p');
+        paragraph.innerHTML = entry.message;
+        // const theEntryElement = document.createElement('div.bk-content');
+        // theEntryElement.innerHTML = paragraph;
+        entriesListElement.appendChild(paragraph);
+
     });
   });
 }
