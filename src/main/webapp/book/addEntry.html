@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Journal Entry Main Page</title>
+        <link rel="stylesheet" href="addEntry.css"></link>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="container">
+                <section class="open-book">
+                    <header>
+                        <h1>Personal Journal</h1>
+                        <h6>TODO: User's Name Here</h6>
+                    </header>
+                    <article>
+                        <h2 class="chapter-title">Today's Journal Entry</h2>
+                        <p>
+                            Dear Diary,
+                            <br>
+                            <form action="/journal" method="POST">
+                                <textarea type="text" id="result" name="message" placeholder = "Share how today went..." style = "height:200px"></textarea>
+                                <input type="submit" value="Submit">
+                            </form>
+                            <div>
+                                <a href="/book.html">
+                                    <div class="buttontext">
+                                        <span>Return to Home</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </p>
+                    </article>
+                    <footer>
+                        <ol id="page-numbers">
+                            <li>1</li>
+                            <li>2</li>
+                        </ol>
+                    </footer>
+                </section>
+            </div>
+        </div>
+
+    <div>
+        <a href="/book.html" >
+            <div class="buttontext">
+                <span>Return to Home</span>
+            </div>
+        </a>
+    </div> 
+    
+    </body>
+</html>
