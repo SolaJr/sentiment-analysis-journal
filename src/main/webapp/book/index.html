@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<link rel="stylesheet" type="text/css" href="book.css" />
+	</head>
+	<body onload="loadEntries()">
+        <!-- <button onclick="loadEntries()"> View the Entries! </button> -->
+
+		<div class="container">	
+			<div class="bookItem">
+				<ul id="bk-list" class="bk-list clearfix">
+					<li>
+						<div class="bk-book book-1 bk-bookdefault">
+							<div class="bk-front">
+								<div class="bk-cover-back"></div>
+								<div class="bk-cover">
+									<h2>
+										<span>(TODO: put user's name here)</span>
+									    <span>Personal Journal</span>
+									</h2>
+								</div>
+							</div>
+							<div class="bk-page">
+								<div class="bk-content bk-content-current">
+                                    <h2> Index </h2>
+                                    <p>
+                                        <button> <a href="/book/addEntry.html"> Add Today's Entry </a> </button>
+                                    </p>
+                                </div>
+                                <div class="bk-content">
+                                    <p> View your previous entries on the following pages </p>
+								</div>
+                                <div id="entry-container" class= "entry-container bk-content">
+                                </div>
+							</div>
+							<div class="bk-back">
+								<p> TODO: Should anything go on the back of the journal? </p>
+							</div>
+							<div class="bk-right"></div>
+							<div class="bk-left">
+								<h2>
+									<span>(TODO: put user's name here)</span>
+									<span>Personal Journal</span>
+								</h2>
+							</div>
+							<div class="bk-top"></div>
+							<div class="bk-bottom"></div>
+						</div>
+						<div class="bk-info">
+							<button class="bk-bookback">Flip</button>
+							<button class="bk-bookview">View inside</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="book.js"></script>
+		<script>
+			$(function() {
+				Books.init();
+			});
+		</script>
+	</body>
+</html>
